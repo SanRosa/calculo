@@ -174,7 +174,7 @@ El proceso para graficar una función dada una fórmula $f(x)$ es el siguiente:
 
 1. Escoge un rango de valores para $x$. Por ejemplo: -3, -2, -1, 0, 1, 2 y 3.
 2. Evalúa cada uno de los valores en la función $f(x)$. Hazlo en una tabla para mantener orden.
-3. Cada uno de los valores obtenidos forman una coordenada $(x, f(x))$. Ubicalos en el plano.
+3. Cada uno de los valores obtenidos forman una coordenada $(x, f(x))$. Ubícalos en el plano.
 
 Por ejemplo, vamos a conseguir la gráfica de al función $f(x) = x^{3}$ desde $-3$ hasta $3$.
 
@@ -269,7 +269,7 @@ la misma función:
 |      |                                     |                     |
 | $-1$ | $f(-1) = \frac{1}{-1} = -1$         | $(-1, -1)$          |
 |      |                                     |                     |
-| $0$  | $f(0) = \frac{1}{0} (\text{indef})$ | $(0, -)$            |
+| $0$  | $f(0) = \frac{1}{0} (\text{indet})$ | $(0, -)$            |
 |      |                                     |                     |
 | $1$  | $f(1) = \frac{1}{1} = 1$&nbsp;      | $(1, 1)$            |
 |      |                                     |                     |
@@ -334,3 +334,25 @@ la misma función:
 La forma de la gráfica de una función no siempre es evidente, la mejor
 estrategia es usar el mayor número de puntos para obtener la mejor resolución
 posible.
+
+## Funciones definidas por piezas.
+
+Es posible tener una función que respete múltiples fórmulas, esto se consigue
+al restringir que ciertos argumentos sean evaluados con alguna fórmula y otros
+argumentos con otra.
+
+Por ejemplo:
+
+$$
+f(x) = 
+\begin{cases}
+	2x + 1, x < 3 \\
+	x^{2} - 1, x \geq 3
+\end{cases}
+$$
+
+Para conocer el valor de $f(2)$ notamos que $2 < 3$ y por lo tanto corresponde
+a la primer fórmula ($2x + 1$), así obtenemos $f(2) = 2(2) + 1 = 5$, para
+conocer el valor de $f(5)$ notamos que $5 \geq 3$ y por lo tanto corresponde la
+segunda fórmula ($x^{2} - 1$), así obtenemos $f(5) = 5^{2} - 1 = 24$.
+
