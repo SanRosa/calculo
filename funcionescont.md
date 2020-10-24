@@ -13,7 +13,7 @@ elemento de $B$. Se dice entonces que $A$ es el \textbf{dominio} (también
 conjunto de partida o conjunto inicial) de $f$ y que $B$ es su \textbf{rango}
 (también conjunto de llegada o conjunto final).}}
 
-## Dominio.
+### Dominio.
 
 A el conjunto de posibles argumentos de una función se le conoce como
 **dominio**, utilizando la analogía de la máquina podemos pensar al dominio
@@ -32,7 +32,7 @@ el dominio son todos los números reales $\mathbb{R}$, esto se conoce como
 *dominio implícito*.^[Siempre y cuando cada argumento esta determinado.] Por lo
 tanto, podemos asumir que la función $g(x)=3x$ esta definida para todos los
 números reales, mientras que la función $h(x)=3x, x > 5$ solo esta definida
-para los números que esan mayores que $5$.  Nota que aunque las funciomes
+para los números que sean mayores que $5$.  Nota que aunque las funciones
 $g(x)$ y $h(x)$ tienen la misma fórmula **NO** son iguales. Dos funciones son
 iguales si y solo si comparten el mismo dominio, el mismo rango y la misma
 correspondencia entre elementos.

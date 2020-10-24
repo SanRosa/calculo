@@ -4,41 +4,54 @@ header-includes: \usepackage{tikz}
 				 \pgfplotsset{width=\textwidth,compat=1.9}
 ---
 
-# Función.
+Función.
+========
 
-El concepto de función surge cuando dos variables están relacionadas, de tal
-manera que una de las variables determina el valor de la otra variable.
+El concepto de función surge cuando dos variables están relacionadas, de
+tal manera que una de las variables determina el valor de la otra
+variable.
 
 Ejemplos:
 
-1. Física. Tiempo de caída, $t$ representa tiempo y $h$ representa altura:
-$$ t = \sqrt{\frac{2 \cdot h}{9.81}}$$
-2. Economía / Finanzas. Tipo de cambio. $m$ representa *MXN* (Peso Mexicano) y $d$ representa *USD* (Dólar Americano).^[Este es el tipo de cambio redondeado al tiempo que se escribe este árticulo.]
-$$ d = \frac{m}{21} $$
-3. Geometría. Área del círculo, $A$ representa el área y $r$ representa el radio del círculo:
-$$ A = \pi \cdot r^{2} $$
+1.  Física. Tiempo de caída, $t$ representa tiempo y $h$ representa
+    altura:
+
+$$t = \sqrt{\frac{2 \cdot h}{9.81}}$$
+
+2.  Economía / Finanzas. Tipo de cambio. $m$ representa *MXN* (Peso
+    Mexicano) y $d$ representa *USD* (Dólar Americano).[^1]
+
+$$d = \frac{m}{21}$$
+
+3.  Geometría. Área del círculo, $A$ representa el área y $r$ representa
+    el radio del círculo:
+
+$$A = \pi \cdot r^{2}$$
 
 Estas tres relaciones son ejemplos de funciones, si en *Tiempo de caída*
-sustituimos un valor $h$ por algún número en especifico por ejemplo $h = 20$
-entonces obtenemos:
-$$ t = \sqrt{\frac{2 \cdot 20}{9.81}} = 2.019275\dots \approx 2.02 $$
+sustituimos un valor $h$ por algún número en especifico por ejemplo
+$h = 20$ entonces obtenemos:
+
+$$t = \sqrt{\frac{2 \cdot 20}{9.81}} = 2.019275\ldots \approx 2.02$$
 
 O también, si en *Tipo de cambio* sustituimos $m = 105$ obtenemos:
-$$ d = \frac{105}{21} = 5 $$
 
-En ambos ejemplos, el valor de unas de las variables **determina** el valor de
-la otra variable. En el ejemplo de economía si $m = 105$ entonces $d = 5$, en
-el ejemplo de física si $h = 20$ entonces $t = 2.019275\dots$
+$$d = \frac{105}{21} = 5$$
+
+En ambos ejemplos, el valor de unas de las variables **determina** el
+valor de la otra variable. En el ejemplo de economía si $m = 105$
+entonces $d = 5$, en el ejemplo de física si $h = 20$ entonces
+$t = 2.019275\ldots$
 
 En las funciones tenemos dos tipos de variables: **independientes** y
-**dependientes**. Las variables **dependientes** reciben ese nombre porque
-*dependen* del valor de la otra variable, como regla general las podemos
-identificar porque siempre están despejadas. Las **independientes** tienen la
-característica que nosotros podemos elegir libremente su valor. Puedo sustituir
-$r = 1$, $r = 6.5$, $r = 10.1$ o cualquier valor que yo quiera en la función de
-*Área del círculo*.
+**dependientes**. Las variables **dependientes** reciben ese nombre
+porque *dependen* del valor de la otra variable, como regla general las
+podemos identificar porque siempre están despejadas. Las
+**independientes** tienen la característica que nosotros podemos elegir
+libremente su valor. Puedo sustituir $r = 1$, $r = 6.5$, $r = 10.1$ o
+cualquier valor que yo quiera en la función de *Área del círculo*.
 
-En nuestro ejemplos tenemos:
+En nuestros ejemplos tenemos:
 
 | Función          | Variable Independiente | Variable Dependiente |
 | ---              | ---                    | ---                  |
@@ -48,9 +61,10 @@ En nuestro ejemplos tenemos:
 
 ## Notación $f(x)$
 
-Para simplificar el uso de variables, en cálculo denotamos a las variables
-independientes con la letra $x$ y las variables dependientes con la letra $y$.
-Así, si expresamos nuestros ejemplos de la sección anterior tendríamos:
+Para simplificar el uso de variables, en cálculo denotamos a las
+variables independientes con la letra $x$ y las variables dependientes
+con la letra $y$. Así, si expresamos nuestros ejemplos de la sección
+anterior tendríamos:
 
 \begin{align*}
 	t = \sqrt{\frac{2h}{9.81}} &\to y = \sqrt{\frac{2x}{9.81}} \\
@@ -58,10 +72,10 @@ Así, si expresamos nuestros ejemplos de la sección anterior tendríamos:
 	A = \pi \cdot r^{2} &\to y = \pi \cdot x^{2} \\
 \end{align*}
 
-La notación que involucra a las variables $x$ y $y$ es común en cálculo, sin
-embargo, existe otra notación donde a la variable dependiente $y$ la
-sustituimos por el símbolo $f(x)$. Esta notación
-nos permite escribir a la funciones de la siguiente manera:
+La notación que involucra a las variables $x$ y $y$ es común en cálculo,
+sin embargo, existe otra notación donde a la variable dependiente $y$ la
+sustituimos por el símbolo $f(x)$. Esta notación nos permite escribir a
+la función de la siguiente manera:
 
 \begin{align*}
 	y = \sqrt{\frac{2x}{9.81}} &\to f(x) = \sqrt{\frac{2x}{9.81}} \\
@@ -69,10 +83,11 @@ nos permite escribir a la funciones de la siguiente manera:
 	y = \pi \cdot x^{2} &\to f(x) = \pi \cdot x^{2} \\
 \end{align*}
 
-La letra $f$ que sirve para identificar una función se le conoce como *nombre
-de la función*, claramente se puede nombrar una función como uno quiera, puedo
-cambiar $f(x) = x^{2}$ por $g(x) = x^{2}$ y representan la misma función. Así
-podemos entonces nombrar nuestra funciones como:
+La letra $f$ que sirve para identificar una función se le conoce como
+*nombre de la función*, claramente se puede nombrar una función como uno
+quiera, puedo cambiar $f(x) = x^{2}$ por $g(x) = x^{2}$ y representan la
+misma función. Así podemos entonces nombrar nuestras funciones como:
+
 
 \begin{align*}
 	f(x) = \sqrt{\frac{2x}{9.81}} &\to f(x) = \sqrt{\frac{2x}{9.81}} \\
@@ -113,36 +128,37 @@ podemos entonces nombrar nuestra funciones como:
 	\end{tikzpicture}
 \end{center}
 
-Una manera muy útil de representar funciones, es a través de una "máquina".
-Nosotros le introducimos valores a esta "máquina", esta hace cálculos y nos
-regresa un valor. En el diagrama de arriba tenemos representado este proceso:
-Nuestra máquina es la función $f(x) = x^{2}$, le introducimos el número $3$ y
-la máquina no devuelve el valor $9$.
+Una manera muy útil de representar funciones es a través de una
+"máquina". Nosotros le introducimos valores a esta "máquina", esta hace
+cálculos y nos regresa un valor. En el diagrama de arriba tenemos
+representado este proceso: Nuestra máquina es la función $f(x) = x^{2}$,
+le introducimos el número $3$ y la máquina no devuelve el valor $9$.
 
-A el número que le introducimos a esta máquina se le conocen como *argumento*,
-*entrada* o *input*. Después la máquina "evalúa"^[Claramente nosotros somos los
-que tenemos que hacer los cálculos a mano, la máquina es solo una analogia.] el
-argumento y nos regresa un valor que se le conoce como *valor de retorno*,
-*salida* o *output*.
+A el número que le introducimos a esta máquina se le conocen como
+*argumento*, *entrada* o *input*. Después la máquina "evalúa"[^2] el
+argumento y nos regresa un valor que se le conoce como *valor de
+retorno*, *salida* u *output*.
 
-En nuestro diagrama en particular: $3$ es el argumento, la función evalúa $f(3)
-= 3^{2}$ y el valor de retorno es $9$.
+En nuestro diagrama en particular: $3$ es el argumento, la función
+evalúa $f(3) = 3^{2}$ y el valor de retorno es $9$.
 
 ## Representación de una función.
 
-Tenemos tres maneras de representar una función, cada una de estas maneras
-tiene ventajas y desventajas:
+Tenemos tres maneras de representar una función, cada una de estas
+maneras tiene ventajas y desventajas:
 
-- Fórmula - Representación analítica.
-- Gráfica.
-- Enumeración.
+-   Fórmula - Representación analítica.
+-   Gráfica.
+-   Enumeración.
 
-Una fórmula es la representación mas común en esta materia, ya hemos visto
-muchos ejemplos de fórmulas: $f(x) = x^{2}$, $f(x) = \frac{x}{21}$, etc. La
-gráfica consiste en una colección de puntos en el plano cartesiano, en la
-próxima sección veremos como podemos graficar funciones. Y por última una
-enumeración consiste en describir a través de una lista o tabla a que argumento
-le corresponde que valor de retorno.
+Una fórmula es la representación más común en esta materia, ya hemos
+visto muchos ejemplos de fórmulas: $f(x) = x^{2}$,
+$f(x) = \frac{x}{21}$, etc. La gráfica consiste en una colección de
+puntos en el plano cartesiano, en la próxima sección veremos como
+podemos graficar funciones. Y por última una enumeración consiste en
+describir a través de una lista o tabla a que argumento le corresponde
+que valor de retorno.
+
 
 \begin{center}
 	\begin{tikzpicture}
@@ -162,21 +178,24 @@ le corresponde que valor de retorno.
 	\end{tikzpicture}
 \end{center}
 
-La representación analítica es la que preferimos porque es posible convertirla
-en gráfica y en enumeración, mientras que las otras dos no tienen esta
-característica: la gráfica la podemos convertir en una enumeración pero no
-necesariamente la podemos convertir en fórmula y la enumeración la podemos
-convertir en gráfica pero no necesariamente en fórmula.
+La representación analítica es la que preferimos porque es posible
+convertirla en gráfica y en enumeración, mientras que las otras dos no
+tienen esta característica: la gráfica la podemos convertir en una
+enumeración, pero no necesariamente la podemos convertir en fórmula y la
+enumeración la podemos convertir en gráfica, pero no necesariamente en
+fórmula.
 
 ## Gráfica de una función.(Tabulación)
 
-El proceso para graficar una función dada una fórmula $f(x)$ es el siguiente:
+El proceso para graficar una función dada una fórmula $f(x)$ es el
+siguiente:
 
-1. Escoge un rango de valores para $x$. Por ejemplo: -3, -2, -1, 0, 1, 2 y 3.
-2. Evalúa cada uno de los valores en la función $f(x)$. Hazlo en una tabla para mantener orden.
-3. Cada uno de los valores obtenidos forman una coordenada $(x, f(x))$. Ubícalos en el plano.
+1.  Escoge un rango de valores para $x$. Por ejemplo: -3, -2, -1, 0, 1, 2 y 3.
+2.  Evalúa cada uno de los valores en la función $f(x)$. Hazlo en una tabla para mantener orden.
+3.  Cada uno de los valores obtenidos forman una coordenada $(x,f(x))$. Ubícalos en el plano.
 
-Por ejemplo, vamos a conseguir la gráfica de al función $f(x) = x^{3}$ desde $-3$ hasta $3$.
+Por ejemplo, vamos a conseguir la gráfica de la función $f(x) = x^{3}$
+desde $- 3$ hasta $3$.
 
 | $x$  | $f(x) = x^{3}$           | $\big(x, f(x)\big)$ |
 | ---  | --------------           | -----------         |
@@ -332,14 +351,14 @@ la misma función:
 \end{center}
 
 La forma de la gráfica de una función no siempre es evidente, la mejor
-estrategia es usar el mayor número de puntos para obtener la mejor resolución
-posible.
+estrategia es usar el mayor número de puntos para obtener la mejor
+resolución posible.
 
 ## Funciones definidas por piezas.
 
-Es posible tener una función que respete múltiples fórmulas, esto se consigue
-al restringir que ciertos argumentos sean evaluados con alguna fórmula y otros
-argumentos con otra.
+Es posible tener una función que respete múltiples fórmulas, esto se
+consigue al restringir que ciertos argumentos sean evaluados con alguna
+fórmula y otros argumentos con otra.
 
 Por ejemplo:
 
@@ -351,8 +370,14 @@ f(x) =
 \end{cases}
 $$
 
-Para conocer el valor de $f(2)$ notamos que $2 < 3$ y por lo tanto corresponde
-a la primer fórmula ($2x + 1$), así obtenemos $f(2) = 2(2) + 1 = 5$, para
-conocer el valor de $f(5)$ notamos que $5 \geq 3$ y por lo tanto corresponde la
-segunda fórmula ($x^{2} - 1$), así obtenemos $f(5) = 5^{2} - 1 = 24$.
+Para conocer el valor de $f(2)$ notamos que $2 < 3$ y por lo tanto
+corresponde a la primera fórmula ($2x + 1$), así obtenemos
+$f(2) = 2(2) + 1 = 5$, para conocer el valor de $f(5)$ notamos que
+$5 \geq 3$ y por lo tanto corresponde la segunda fórmula ($x^{2} - 1$),
+así obtenemos $f(5) = 5^{2} - 1 = 24$.
 
+[^1]: Este es el tipo de cambio redondeado al tiempo que se escribe este
+    artículo.
+
+[^2]: Claramente nosotros somos los que tenemos que hacer los cálculos a
+    mano, la máquina es solo una analogía.
