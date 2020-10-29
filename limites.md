@@ -328,4 +328,3 @@ y por último "sustitumos" $\infty$
 
 $$\lim_{x \to \infty} \frac{1 + \cancelto{0}{\frac{1}{x}} + \cancelto{0}{\frac{1}{x^{2}}}}{2 - \cancelto{0}{\frac{3}{x}} - \cancelto{0}{\frac{4}{x^{2}}}} = \frac{1}{2}$$
 
-
