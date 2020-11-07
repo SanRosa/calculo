@@ -146,3 +146,5 @@ $$\lim_{x \to 2^{-}} f(x) = 5 \neq 1 \lim_{x \to 2^{+}} f(x)$$
 el límite *no* existe y por lo tanto es discontinua.
 
 ## Tipos de discontinuidad.
+
+
